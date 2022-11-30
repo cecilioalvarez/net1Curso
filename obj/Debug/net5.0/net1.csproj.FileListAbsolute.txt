@@ -1,0 +1,15 @@
+/Users/cecilioalvarezcaules/Desktop/net1/bin/Debug/net5.0/net1.deps.json
+/Users/cecilioalvarezcaules/Desktop/net1/bin/Debug/net5.0/net1.runtimeconfig.json
+/Users/cecilioalvarezcaules/Desktop/net1/bin/Debug/net5.0/net1.runtimeconfig.dev.json
+/Users/cecilioalvarezcaules/Desktop/net1/bin/Debug/net5.0/net1.dll
+/Users/cecilioalvarezcaules/Desktop/net1/bin/Debug/net5.0/ref/net1.dll
+/Users/cecilioalvarezcaules/Desktop/net1/bin/Debug/net5.0/net1.pdb
+/Users/cecilioalvarezcaules/Desktop/net1/obj/Debug/net5.0/net1.csproj.AssemblyReference.cache
+/Users/cecilioalvarezcaules/Desktop/net1/obj/Debug/net5.0/net1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cecilioalvarezcaules/Desktop/net1/obj/Debug/net5.0/net1.AssemblyInfoInputs.cache
+/Users/cecilioalvarezcaules/Desktop/net1/obj/Debug/net5.0/net1.AssemblyInfo.cs
+/Users/cecilioalvarezcaules/Desktop/net1/obj/Debug/net5.0/net1.csproj.CoreCompileInputs.cache
+/Users/cecilioalvarezcaules/Desktop/net1/obj/Debug/net5.0/net1.dll
+/Users/cecilioalvarezcaules/Desktop/net1/obj/Debug/net5.0/ref/net1.dll
+/Users/cecilioalvarezcaules/Desktop/net1/obj/Debug/net5.0/net1.pdb
+/Users/cecilioalvarezcaules/Desktop/net1/obj/Debug/net5.0/net1.genruntimeconfig.cache
