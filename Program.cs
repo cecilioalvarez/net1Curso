@@ -1,5 +1,5 @@
 ﻿using System;
-
+using net1;
 namespace net1
 {
     class Program
@@ -31,7 +31,7 @@ namespace net1
                 Console.WriteLine("hola"+j);
                 j++;
             }
-            */
+           
             int[] lista= new int[] {1,3,7,8,1};
 
             for (int i=0;i<lista.Length;i++) {
@@ -46,6 +46,23 @@ namespace net1
 
                 Console.WriteLine(lista2[i]);
             }
+
+            
+
+             Persona p= new Persona();
+             p.nombre="pedro";
+             p.edad=70;
+             Console.WriteLine(p.nombre);
+             Console.WriteLine(p.edad);
+             Console.WriteLine(p.estaJubilado());
+            */
+             Factura f= new Factura();
+             f.numero=1;
+             f.concepto="tv";
+             f.importe=200;
+             f.pagada=false;
+             Console.WriteLine(f.ImporteConIVA());
+
 
         }
     }

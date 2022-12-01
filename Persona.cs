@@ -2,7 +2,12 @@ namespace net1
 {
 public class Persona {
 
-    string nombre;
-    int edad;
+    public string nombre;
+    public int edad;
+
+    public bool estaJubilado() {
+
+        return edad>65;
+    }
 }
 }
