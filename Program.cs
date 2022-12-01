@@ -61,8 +61,13 @@ namespace net1
              f.concepto="tv";
              f.importe=200;
              f.pagada=false;
-             Console.WriteLine(f.ImporteConIVA());
+             if(f.pagada) {
+                Console.WriteLine(f.ImporteConIVA());
 
+             }else {
+                Console.WriteLine("no esta pagada");
+             }
+           
 
         }
     }
