@@ -31,4 +31,3 @@
 /Users/cecilioalvarezcaules/Desktop/net1/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
 /Users/cecilioalvarezcaules/Desktop/net1/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/cecilioalvarezcaules/Desktop/net1/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
-/Users/cecilioalvarezcaules/Desktop/net1/obj/Debug/net5.0/net1.csproj.CopyComplete
