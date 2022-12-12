@@ -1,5 +1,5 @@
 using MySql.Data.MySqlClient;
-using System.Collections;
+using System.Collections.Generic;
 namespace net1
 {
     public class PersonaRepository {

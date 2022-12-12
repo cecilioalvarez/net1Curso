@@ -2,6 +2,7 @@
 using System;
 using net1;
 using MySql.Data.MySqlClient;
+using System.Collections.Generic;
 namespace net1
 {
     class Program
@@ -10,7 +11,7 @@ namespace net1
         {
             PersonaRepository repo= new PersonaRepository();
 
-            MySqlConnection conn= repo.ObtenerConexion();
+            List<PersonaNueva> lista= repo.ObtenerConexion();
 
 
            
