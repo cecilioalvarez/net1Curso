@@ -5,7 +5,7 @@ namespace net1
     public class PersonaRepository {
 
 
-        public MySqlConnection ObtenerConexion() {
+        public List<Persona> ObtenerConexion() {
 
 
             var sb = new MySqlConnectionStringBuilder
@@ -19,7 +19,22 @@ namespace net1
             MySqlConnection conn = 
             new MySqlConnection(sb.ConnectionString);
             conn.Open();
-            return conn;
+
+            var comando = conn.CreateCommand();
+            comando.CommandText = "select * from  Personas";
+            var reader = 
+            comando
+            .ExecuteReader(System.Data.CommandBehavior.CloseConnection);
+            List<Persona> lista=new List<Persona>();
+            while(reader.Read()) {
+
+
+                Persona p= new Persona(reader.GetString("dni"),reader.GetString("nombre"),reader.GetString("apellidos"));
+                lista.Add(p);
+
+            }
+
+            return lista;
 
 
         }
