@@ -13,16 +13,7 @@ namespace net1
             MySqlConnection conn= repo.ObtenerConexion();
 
 
-            var comando = conn.CreateCommand();
-            comando.CommandText = "select * from  Personas";
-            var reader = 
-            comando
-            .ExecuteReader(System.Data.CommandBehavior.CloseConnection);
-            while(reader.Read()) {
-
-
-                Console.WriteLine(reader.GetString("nombre"));
-            }
+           
 
          Console.WriteLine("hola");
         }
