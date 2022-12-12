@@ -5,7 +5,7 @@ namespace net1
     public class PersonaRepository {
 
 
-        public Connection obtenerConexion() {
+        public MySqlConnection ObtenerConexion() {
 
 
             var sb = new MySqlConnectionStringBuilder

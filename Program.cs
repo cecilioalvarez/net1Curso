@@ -8,18 +8,10 @@ namespace net1
     {
         static void Main(string[] args)
         {
+            PersonaRepository repo= new PersonaRepository();
 
-            var sb = new MySqlConnectionStringBuilder
-            {
-                Server = "localhost",
-                UserID = "root",
-                Password = "root",
-                Port = 3306,
-                Database = "curso2"
-            };
-            MySqlConnection conn = 
-            new MySqlConnection(sb.ConnectionString);
-            conn.Open();
+            MySqlConnection conn= repo.ObtenerConexion();
+
 
             var comando = conn.CreateCommand();
             comando.CommandText = "select * from  Personas";
