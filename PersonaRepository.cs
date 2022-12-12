@@ -1,11 +1,11 @@
 using MySql.Data.MySqlClient;
-
+using System.Collections;
 namespace net1
 {
     public class PersonaRepository {
 
 
-        public List<Persona> ObtenerConexion() {
+        public List<PersonaNueva> ObtenerConexion() {
 
 
             var sb = new MySqlConnectionStringBuilder
@@ -25,11 +25,13 @@ namespace net1
             var reader = 
             comando
             .ExecuteReader(System.Data.CommandBehavior.CloseConnection);
-            List<Persona> lista=new List<Persona>();
+            List<PersonaNueva> lista=new List<PersonaNueva>();
             while(reader.Read()) {
 
 
-                Persona p= new Persona(reader.GetString("dni"),reader.GetString("nombre"),reader.GetString("apellidos"));
+                PersonaNueva p= new PersonaNueva(reader.GetString("dni"),
+                reader.GetString("nombre"),
+                reader.GetString("apellidos"));
                 lista.Add(p);
 
             }
