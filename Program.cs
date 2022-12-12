@@ -56,6 +56,8 @@ namespace net1
              Console.WriteLine(p.edad);
              Console.WriteLine(p.estaJubilado());
             */
+
+            /*
              Factura f= new Factura();
              f.numero=1;
              f.concepto="tv";
@@ -68,6 +70,25 @@ namespace net1
                 Console.WriteLine("no esta pagada");
              }
            
+
+           Rectangulo o1= new Rectangulo();
+           o1.lado1=2;
+           o1.lado2=4;
+           double area= o1.Area();
+           Console.WriteLine(area);
+          
+            Caja c= new Caja(2,3,8);
+            //c.ancho=2;
+            //c.alto=3;
+            //c.profundo=6;
+            Console.WriteLine(c.Volumen());
+
+             */
+             Persona objeto1= new Persona();
+             objeto1.Nombre="pedro";
+             objeto1.Edad=500;
+             Console.WriteLine(objeto1.Edad);
+             Console.WriteLine(objeto1.Nombre);
 
         }
     }
