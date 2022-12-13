@@ -25,6 +25,7 @@ namespace net1
             var reader = 
             comando
             .ExecuteReader(System.Data.CommandBehavior.CloseConnection);
+            
             List<PersonaNueva> lista=new List<PersonaNueva>();
             while(reader.Read()) {
 
