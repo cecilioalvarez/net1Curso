@@ -99,7 +99,8 @@ public  void  Insertar(PersonaNueva persona) {
 
             var comando = conn.CreateCommand();
             comando.CommandText = 
-            " insert into Personas values('" +persona.Dni+ "','" +persona.Nombre+"','" +persona.Apellidos+ "')"; 
+            " insert into Personas values('" +persona.Dni+ "','"
+             +persona.Nombre+"','" +persona.Apellidos+ "')"; 
             comando.ExecuteNonQuery();
 
           

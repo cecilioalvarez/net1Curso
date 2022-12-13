@@ -11,6 +11,7 @@ namespace net1
         {
             PersonaRepository repo= new PersonaRepository();
 
+            /*
             List<PersonaNueva> lista= repo.BuscarTodas();
 
             foreach (var persona in lista)
@@ -22,7 +23,11 @@ namespace net1
 
             }
             Console.WriteLine("*******************");
+            */
 
+            PersonaNueva pnueva=
+             new PersonaNueva("101","angelito","perez");
+            repo.Insertar(pnueva);
 
             List<PersonaNueva> lista2= repo.BuscarTodasOrdenadasPorNombre();
 
@@ -30,10 +35,12 @@ namespace net1
             {
                 
                 Console.Write(persona.Nombre);
-                Console.WriteLine(persona.Apellidos);
-                Console.Write(persona.Dni);
+                Console.Write(persona.Apellidos);
+                Console.WriteLine(persona.Dni);
 
             }
+           
+
         }
     }
 }
