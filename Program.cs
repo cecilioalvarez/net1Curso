@@ -28,10 +28,10 @@ namespace net1
 
             foreach (var persona in lista2)
             {
-                Console.Write(persona.Dni);
+                
                 Console.Write(persona.Nombre);
                 Console.WriteLine(persona.Apellidos);
-                
+                Console.Write(persona.Dni);
 
             }
         }
