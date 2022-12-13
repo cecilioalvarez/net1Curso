@@ -11,7 +11,7 @@ namespace net1
         {
             PersonaRepository repo= new PersonaRepository();
 
-            List<PersonaNueva> lista= repo.ObtenerConexion();
+            List<PersonaNueva> lista= repo.BuscarTodas();
 
             foreach (var persona in lista)
             {
@@ -21,9 +21,19 @@ namespace net1
                 
 
             }
-           
+            Console.WriteLine("*******************");
 
-         Console.WriteLine("hola");
+
+            List<PersonaNueva> lista2= repo.BuscarTodasOrdenadasPorNombre();
+
+            foreach (var persona in lista2)
+            {
+                Console.Write(persona.Dni);
+                Console.Write(persona.Nombre);
+                Console.WriteLine(persona.Apellidos);
+                
+
+            }
         }
     }
 }
